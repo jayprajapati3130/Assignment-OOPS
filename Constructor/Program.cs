@@ -28,6 +28,7 @@ namespace Constructor
         {
             Addition add = new Addition();
             Addition addition = new Addition(12,15);
+            Console.ReadLine();
 
         }
     }
