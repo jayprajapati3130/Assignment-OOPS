@@ -8,19 +8,19 @@ namespace AccessModifier
 {
     class Accessmodifier
     {
-        public void publicMethod()
+        public void PublicMethod()
         {
             Console.WriteLine("This is Public method in Accessmodifier which is Access by all other class without inheritance");
         }
-        private void privateMethod()
+        private void PrivateMethod()
         {
             Console.WriteLine("this is Private method it is only Access by its own class");
         }
-        protected void protectedMethod()
+        protected void ProtectedMethod()
         {
             Console.WriteLine("this is Protected Method which is Access by own class and their child class");
         }
-        void defaultMethod()
+        void DefaultMethod()
         {
             Console.WriteLine("this is Default Method");
         }
@@ -36,15 +36,16 @@ namespace AccessModifier
             Accessmodifier accessmodifier = new Accessmodifier();
             Program program = new Program();
             //public method is Access by Program class 
-            accessmodifier.publicMethod();
-            program.publicMethod();
+            accessmodifier.PublicMethod();
+            program.PublicMethod();
 
             //accessmodifier.privateMethod();  "we can not access private method in this class"
             
             //protected Method is Access by Program class using Inheritance
-            program.protectedMethod();
+            program.ProtectedMethod();
 
             //program.defaultMethod(); "we can not access default method in this class"
+            Console.ReadLine();
         }
     }
 }

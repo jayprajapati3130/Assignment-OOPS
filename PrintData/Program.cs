@@ -8,15 +8,15 @@ namespace PrintData
 {
     class OverloadingDemo
     {
-        public void printData(String name)
+        public void PrintData(String name)
         {
             Console.WriteLine(name);
         }
-        public void printData(String name1,string name2)
+        public void PrintData(String name1,string name2)
         {
             Console.WriteLine(name1 + name2);
         }
-        public void printData(String name1, string name2,String email,String city)
+        public void PrintData(String name1, string name2,String email,String city)
         {
             Console.WriteLine(name1 + name2 + city + email);
         }
@@ -45,19 +45,19 @@ namespace PrintData
             int choice=Convert.ToInt32(Console.ReadLine());
             if(choice==1)
             {
-                demo.printData(firstName);
+                demo.PrintData(firstName);
             }
             if(choice==2)
             {
-                demo.printData(firstName + " " +lastName);
+                demo.PrintData(firstName + " " +lastName);
             }
             if(choice==3)
             {
-                demo.printData(firstName + " " + lastName + " "+email+ " " + city);
+                demo.PrintData(firstName + " " + lastName + " "+email+ " " + city);
             }
 
 
-
+            Console.ReadLine();
         }
     }
 }

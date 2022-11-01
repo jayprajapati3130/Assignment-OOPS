@@ -10,20 +10,20 @@ namespace Inheritance
     {
         interface IPolygon
         {
-            void calculateArea(int a, int b);
+            void CalculateArea(int a, int b);
         }
         interface IColor
         {
-            void getColor();
+            void GetColor();
         }
         class Rectangle : IPolygon,IColor
         {
-            public void calculateArea(int a, int b)
+            public void CalculateArea(int a, int b)
             {
                 int area = a * b;
                 Console.WriteLine("Area of Rectangle: " + area);
             }
-            public void getColor()
+            public void GetColor()
             {
 
                 Console.WriteLine("Red Rectangle");
@@ -33,8 +33,9 @@ namespace Inheritance
         static void Main(string[] args)
         {
             Rectangle r1 = new Rectangle();
-            r1.calculateArea(100, 200);
-            r1.getColor();
+            r1.CalculateArea(100, 200);
+            r1.GetColor();
+            Console.ReadLine();
         }
     }
 }

@@ -8,51 +8,51 @@ namespace Vehicle
 {
     abstract class Vehicle
     {
-        public abstract void start();
-        public abstract void stop();
-        public abstract void type();
+        public abstract void Start();
+        public abstract void Stop();
+        public abstract void Type();
     }
     class Bike : Vehicle
     {
-        public override void start()
+        public override void Start()
         {
             Console.WriteLine("bike Start using Kick");
         }
-        public override void stop()
+        public override void Stop()
         {
             Console.WriteLine("bike Stop when break pressed");
         }
-        public override void type()
+        public override void Type()
         {
             Console.WriteLine("Petrol type\n");
         }
     }
     class Car : Vehicle
     {
-        public override void start()
+        public override void Start()
         {
             Console.WriteLine("Car Start Using cell");
         }
-        public override void stop()
+        public override void Stop()
         {
             Console.WriteLine("Car Stop when break pressed");
         }
-        public override void type()
+        public override void Type()
         {
             Console.WriteLine("Petrol & diesel type\n");
         }
     }
     class ElectricCar : Vehicle
     {
-        public override void start()
+        public override void Start()
         {
             Console.WriteLine("Car Start Using cell and Key");
         }
-        public override void stop()
+        public override void Stop()
         {
             Console.WriteLine("Car Stop when break pressed");
         }
-        public override void type()
+        public override void Type()
         {
             Console.WriteLine("Electric\n");
         }
@@ -62,20 +62,20 @@ namespace Vehicle
         static void Main(string[] args)
         {
             Bike bike = new Bike();
-            bike.start();
-            bike.stop();
-            bike.type();
+            bike.Start();
+            bike.Stop();
+            bike.Type();
 
             Car car = new Car();
-            car.start();
-            car.stop();
-            car.type();
+            car.Start();
+            car.Stop();
+            car.Type();
 
             ElectricCar electricCar = new ElectricCar();
-            electricCar.start();
-            electricCar.stop();
-            electricCar.type();
-
+            electricCar.Start();
+            electricCar.Stop();
+            electricCar.Type();
+            Console.ReadLine();
 
         }
     }

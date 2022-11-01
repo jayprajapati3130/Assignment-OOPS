@@ -8,32 +8,32 @@ namespace HierarchicalInheritance
 {
     class Rbi
     {
-        public void credit()
+        public void Credit()
         {
             Console.WriteLine("add Money in Bank Account");
         }
-        public void debit()
+        public void Debit()
         {
             Console.WriteLine("Money paid out from Bank Account");
         }
     }
     class Icici : Rbi
     {
-        public void checkBal()
+        public void CheckBal()
         {
             Console.WriteLine("we can check balance ");
         }
     }
     class Bob : Rbi
     {
-        public void creditCard()
+        public void CreditCard()
         {
             Console.WriteLine("BOB implement credit card feature");
         }
     }
     class Hdfc : Rbi
     {
-        public void netBancking()
+        public void NetBancking()
         {
             Console.WriteLine("HDFC implement NetBanking Feature");
         }
@@ -43,12 +43,13 @@ namespace HierarchicalInheritance
         static void Main(string[] args)
         {
             Icici icici = new Icici();
-            icici.credit();
-            icici.checkBal();
+            icici.Credit();
+            icici.CheckBal();
 
             Hdfc hdfc = new Hdfc();
-            hdfc.credit();
-            hdfc.netBancking();
+            hdfc.Credit();
+            hdfc.NetBancking();
+            Console.ReadLine();
         }
     }
 }

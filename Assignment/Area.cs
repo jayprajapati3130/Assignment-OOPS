@@ -67,7 +67,7 @@ namespace Assignment
                 side2 = Convert.ToInt32((Console.ReadLine()));
                 AreaRectangle rectangle = new AreaRectangle();
                 Console.WriteLine("Area of rectangle : {0}", rectangle.CalArea(side1, side2));
-
+                Console.ReadLine();
             }
 
         }

@@ -8,11 +8,11 @@ namespace MultilevelInheritance
 {
     class Calculator
     {
-        public void add()
+        public void Add()
         {
             Console.WriteLine("implement Add Function");
         }
-        public void sub()
+        public void Sub()
         {
             Console.WriteLine("implement Sub Function");
 
@@ -20,7 +20,7 @@ namespace MultilevelInheritance
     }
     class AdvanceCal : Calculator
     {
-        public void area()
+        public void Area()
         {
             Console.WriteLine("implement Area Function");
 
@@ -28,11 +28,11 @@ namespace MultilevelInheritance
     }
     class ScientificCal : AdvanceCal
     {
-        public void sin()
+        public void Sin()
         {
             Console.WriteLine("implement Sin Function");
         }
-        public void cos()
+        public void Cos()
         {
             Console.WriteLine("implement Cos Function");
 
@@ -43,12 +43,12 @@ namespace MultilevelInheritance
         static void Main(string[] args)
         {
             ScientificCal cal = new ScientificCal();
-            cal.add();
-            cal.sub();
-            cal.area();
-            cal.cos();
-            cal.sin();
-
+            cal.Add();
+            cal.Sub();
+            cal.Area();
+            cal.Cos();
+            cal.Sin();
+            Console.ReadLine();
         }
     }
 }

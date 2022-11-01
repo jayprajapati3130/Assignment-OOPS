@@ -8,7 +8,7 @@ namespace SingleInheritance
 {
     class Employee
     {
-        public void salary()
+        public void Salary()
         {
             Console.WriteLine("salay = 23000");
 
@@ -16,7 +16,7 @@ namespace SingleInheritance
     }
     class Programmer : Employee
     {
-        public void bonus()
+        public void Bonus()
         {
             Console.WriteLine("Bonus = 5000");
         }
@@ -26,8 +26,9 @@ namespace SingleInheritance
         static void Main(string[] args)
         {
             Programmer programmer = new Programmer();
-            programmer.salary();
-            programmer.bonus();
+            programmer.Salary();
+            programmer.Bonus();
+            Console.ReadLine();
 
         }
     }
